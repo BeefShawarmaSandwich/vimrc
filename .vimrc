@@ -1,8 +1,9 @@
-"plug plugin manager
+"plug plugins manager
 
 call plug#begin()
 "plugins
 Plug 'ayu-theme/ayu-vim'
+Plug 'takac/vim-hardtime'
 call plug#end()
 
 "general stuff
@@ -24,3 +25,8 @@ set expandtab
 
 let ayucolor="mirage"
 colorscheme ayu
+
+"vim-hardtime
+
+let g:hardtime_default_on = 1
+let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
