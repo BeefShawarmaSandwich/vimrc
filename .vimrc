@@ -3,7 +3,6 @@
 call plug#begin()
 "plugins
 Plug 'ayu-theme/ayu-vim'
-Plug 'takac/vim-hardtime'
 call plug#end()
 
 "general stuff
@@ -26,7 +25,20 @@ set expandtab
 let ayucolor="mirage"
 colorscheme ayu
 
-"vim-hardtime
+"disable the arrow keys
 
-let g:hardtime_default_on = 1
-let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+cnoremap <Up> <Nop>
+cnoremap <Down> <Nop>
+cnoremap <Left> <Nop>
+cnoremap <Right> <Nop>
+
